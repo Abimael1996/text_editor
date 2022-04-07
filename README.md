@@ -6,6 +6,8 @@ A PWA Application that allows you to create notes or code snippets with or witho
 
 ![Site screenshot](images/screenshot.png)
 
+Visit the website: https://peaceful-headland-90409.herokuapp.com/
+
 ## Table of Contents
     
 - [Usage](#usage)
