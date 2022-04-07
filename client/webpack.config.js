@@ -22,6 +22,11 @@ module.exports = () => {
         template: './index.html',
         title: 'J.A.T.E'
       }),
+      new HtmlWebpackPlugin({
+        filename: 'offline.html',
+        template: './offline.html',
+        title: 'Offline'
+      }),
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js'
