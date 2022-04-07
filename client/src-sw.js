@@ -41,6 +41,18 @@ registerRoute(
   })
 );
 
+registerRoute(
+  ({ request }) => ['image'].includes(request.destination),
+  new CacheFirst({
+    cacheName: 'image-cache',
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+    ],
+  })
+);
+
 setDefaultHandler(
   new NetworkOnly()
 );
